@@ -1,0 +1,42 @@
+Macro:
+    no error detection
+    we assume the macro's name is not a saved word.
+
+First pass:
+    Text:
+        max chars in a line: 80 + (optional)new line char + terminator char(predefined in macro - global.h)
+        max words in a line: 50 (predefined in macro - global.h)
+        no comma in end of line
+    Labels:
+        max chars: 30 (predefined in macro - global.h)
+        no saved words allowed
+        only alphanumeric chars are allowed
+        starts with a char(not a digit)
+        ends with a colon(:)
+        a label must be defined only once
+    Numbers:
+        if used @ instruction line - range: -128 <= x <= 127
+        if used @ guidance line - range: -512 <= x <= 511
+        can be signed/unsigned
+        only integers
+    String:
+        only ASCII chars
+        quotation on both sides
+    Instructions:
+        allowed operations
+        a specific number of allowed operands for each instruction
+        allowed methods for source/dest
+    Guidance:
+        data:
+            every 2 numbers must have a comma between
+        struct:
+            first is a number, second is a string
+
+Second pass:
+    Labels:
+        the used label wasn't found in the file
+    Entry:
+        entry label must exist in the source file
+        entry label can't be defined also as an external label
+    Extern:
+        the extern label was already defined in the source file
