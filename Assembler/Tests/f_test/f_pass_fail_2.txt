@@ -1,0 +1,15 @@
+first pass fail 2: Numbers, String, Struct, Data
+    Number:
+        fails @ number < -128 for instruction
+        fails @ number > 127 for instruction
+        fails @ number < -512 for guidance
+        fails @ number > 511 for guidance
+        fails @ not a number (string instead)
+        success @ signed/unsigned numbers
+    String:
+        fails @ no end quote for string in a struct
+        success @ quote in a middle of a string
+    Struct:
+        fails @ first argument string and second an integer
+    Data:
+        fails @ every 2 numbers should be seperated by a comma
