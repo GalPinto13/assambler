@@ -1,8 +1,0 @@
-first pass fail 1: Labels
-    Labels:
-        fails @ label with non-alphanumeric chars
-        fails @ too long label(over 30)
-        fails @ label defined more than once in a file
-        fails @ saved word used as label name(instruction)
-        fails @ saved word used as label name(register)
-	   fails @ label starts with not-a-char

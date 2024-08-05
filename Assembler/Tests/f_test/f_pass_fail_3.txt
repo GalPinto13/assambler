@@ -1,5 +1,0 @@
-f_pass_fail_3: Instructions
-    Instructions:
-        fails @ incompatible number of operands
-        fails @ incompatible type of operand
-        fails @ not an operation

@@ -1,6 +1,0 @@
-s_pass_fail_3: Labels
-    Labels:
-        fails @ used label wasn't found on the file
-        fails @ entry label doesn't exist in the file
-        fails @ entry label is already defined as external
-        fails @ external label is already defined in the file
